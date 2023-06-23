@@ -101,7 +101,7 @@ router.get('/success', async (req, res) => {
       price: price,
     });
     // return to client home page
-    res.redirect('http://localhost:5173/payment-successful');
+    res.redirect('https://test-vercel-7nfi.vercel.app/payment-successful');
   } catch (err) {
     console.error(err);
     res
