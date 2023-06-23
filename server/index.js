@@ -19,26 +19,6 @@ const app = express();
 // middleware to handle json
 app.use(express.json());
 
-// const whiteList = [
-//   'https://airbnb-clone0.netlify.app',
-//   'https://airbnb-1.netlify.app',
-//   'http://localhost:5173',
-// ];
-// CORS;
-// app.use(
-//   cors({
-//     credentials: true,
-//     exposedHeaders: ['set-cookie'],
-//     origin(origin, callback) {
-//       if (whiteList.indexOf(origin) !== -1) {
-//         callback(null, true);
-//       } else {
-//         callback(new Error('Not allowed by cors'));
-//       }
-//     },
-//   })
-// );
-
 app.use(
   cors({
     origin: 'https://test-vercel-7nfi.vercel.app/',
@@ -49,7 +29,7 @@ app.use(
 // use express router
 app.use('/', require('./routes'));
 
-app.listen(process.env.PORT || 8001, (err) => {
+app.listen('https://test-vercel-lime.vercel.app/', (err) => {
   if (err) {
     console.log('Error in connecting to server: ', err);
   }
