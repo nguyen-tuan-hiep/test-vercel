@@ -16,7 +16,7 @@ cloudinary.config({
 
 const app = express();
 
-// middleware to handle json
+// middleware to handle j
 app.use(express.json());
 
 app.use(
@@ -29,7 +29,7 @@ app.use(
 // use express router
 app.use('/', require('./routes'));
 
-app.listen('https://test-vercel-lime.vercel.app/', (err) => {
+app.listen(8001, (err) => {
   if (err) {
     console.log('Error in connecting to server: ', err);
   }
