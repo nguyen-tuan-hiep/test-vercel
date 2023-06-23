@@ -1,0 +1,93 @@
+:root {
+  --white: white;
+  --black: black;
+  --placeholder: #4c4c4c;
+  --background: #373737;
+  --box-background: #d9d9d9;
+  --footer-background: #323232;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#dark,
+#dark .things {
+  background-color: var(--background);
+}
+
+#light .message__title,
+#light .message__text,
+#dark a,
+#dark h1,
+#dark h2,
+#dark h3,
+#dark h4,
+#dark h5,
+#dark p,
+#dark .register,
+#dark .upload,
+#dark .checkbox,
+#dark .perk,
+#dark .thingstoknow {
+  color: var(--white);
+}
+
+#dark .darktxt {
+  color: var(--black);
+}
+
+#dark input,
+#dark textarea,
+#dark .form,
+#dark .place-card,
+#dark .search-icon,
+#dark .input-bookings,
+#dark .chatbox,
+#dark .all-photo-button {
+  background-color: var(--box-background);
+}
+
+#dark textarea::placeholder,
+#dark #search::placeholder,
+#dark #title::placeholder,
+#dark #checkIn::placeholder,
+#dark #checkOut::placeholder,
+#dark #maxGuests::placeholder,
+#dark #price::placeholder,
+#dark #photoLink::placeholder,
+#dark #email::placeholder,
+#dark #password::placeholder,
+#dark #address::placeholder {
+  color: var(--placeholder);
+}
+
+#dark .price,
+#dark .message__title,
+#dark .message__text {
+  color: var(--background);
+}
+
+#dark input,
+#dark .icon {
+  color: black;
+}
+
+#dark .footer {
+  background-color: var(--footer-background);
+}
+
+#dark .checkbox.Mui-checked {
+  color: pink;
+}
+
+#chat_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+}
