@@ -21,7 +21,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: 'https://test-vercel-7nfi.vercel.app/',
+    origin: 'https://test-vercel-7nfi.vercel.app',
     credentials: true,
   })
 );

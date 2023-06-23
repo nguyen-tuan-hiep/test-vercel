@@ -63,7 +63,7 @@ router.post('/checkout', async (req, res) => {
       mode: 'payment',
       success_url:
         'http://localhost:8001/success?session_id={CHECKOUT_SESSION_ID}',
-      cancel_url: 'http://localhost:5173/payment-cancel',
+      cancel_url: 'https://test-vercel-7nfi.vercel.app/payment-cancel',
       metadata: {
         checkIn,
         checkOut,
