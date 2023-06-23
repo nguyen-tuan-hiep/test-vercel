@@ -41,7 +41,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://test-vercel-7nfi.vercel.app/',
     credentials: true,
   })
 );
